@@ -1,0 +1,14 @@
+$colors: (
+  light-gray: hsla(0, 1%, 33%, 0.5),
+  med-gray: hsl(0, 0%, 16%),
+  med-gray-half: hsla(0, 0%, 16%, 0.5),
+  dark-gray: hsl(0, 0%, 20%),
+  white: hsl(0, 0%, 100%),
+  off-white: hsl(0, 0%, 94%),
+  primary: hsl(347, 94%, 69%),
+  primary-dark: hsl(347, 64%, 54%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
