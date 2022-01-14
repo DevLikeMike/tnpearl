@@ -9,12 +9,19 @@ import styled from "styled-components";
 
 const Navbar = styled.nav`
   width: 100vw;
-  height: 3rem;
-  display: flex;
-  justify-content: flex-end;
-  background-color: ${(props) => props.theme.primary};
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  height: 5rem;
+  background-color: ${(props) => props.theme.white};
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
   z-index: 100;
+  padding: 0 3rem;
+
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
 `;
 
 const NavList = styled.ul`
@@ -24,7 +31,6 @@ const NavList = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-right: ${(props) => props.theme.standardPadding};
 
   @media (max-width: 768px) {
     margin-right: ${(props) => props.theme.mobilePadding};
@@ -39,7 +45,7 @@ const NavItem = styled.li`
   display: none;
   transition: background-color 0.3s ease;
   border-radius: 3px;
-  color: #fff;
+  color: ${(props) => props.theme.darkGray};
 
   &:hover {
     background-color: ${(props) => props.theme.primaryDark};
@@ -72,38 +78,40 @@ export default function Header() {
 
   return (
     <Navbar>
-      <Image src={"/logo.png"} width='32' height='32' />
-      <NavList>
-        <NavItem>
-          <Link href='/'>
-            <a>Home</a>
-          </Link>
-        </NavItem>
+      <div className='navContainer'>
+        <Image src={"/logo.png"} width='120' height='80' />
+        <NavList>
+          <NavItem>
+            <Link href='/'>
+              <a>Home</a>
+            </Link>
+          </NavItem>
 
-        <NavItem>
-          <Link href='/about'>
-            <a>About</a>
-          </Link>
-        </NavItem>
+          <NavItem>
+            <Link href='/about'>
+              <a>About</a>
+            </Link>
+          </NavItem>
 
-        <NavItem>
-          <Link href='/services'>
-            <a>Services</a>
-          </Link>
-        </NavItem>
+          <NavItem>
+            <Link href='/services'>
+              <a>Services</a>
+            </Link>
+          </NavItem>
 
-        <NavItem>
-          <Link href='/contact'>
-            <a>Contact</a>
-          </Link>
-        </NavItem>
+          <NavItem>
+            <Link href='/contact'>
+              <a>Contact</a>
+            </Link>
+          </NavItem>
 
-        <Hamburger
-          openHandler={openHandler}
-          sideNavigationOpen={sideNavigationOpen}
-        />
-      </NavList>
-      <SideNav sideOpen={sideNavigationOpen} openHandler={openHandler} />
+          <Hamburger
+            openHandler={openHandler}
+            sideNavigationOpen={sideNavigationOpen}
+          />
+        </NavList>
+        <SideNav sideOpen={sideNavigationOpen} openHandler={openHandler} />
+      </div>
     </Navbar>
   );
 }
