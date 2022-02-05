@@ -11,7 +11,8 @@ const Navbar = styled.nav`
   width: 100vw;
   height: 5rem;
   background-color: ${(props) => props.theme.white};
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #aaa;
   z-index: 100;
   padding: 0 3rem;
 
@@ -79,7 +80,7 @@ export default function Header() {
   return (
     <Navbar>
       <div className='navContainer'>
-        <Image src={"/logo.png"} width='120' height='80' />
+        <Image src={"/logo2.png"} width='120' height='80' />
         <NavList>
           <NavItem>
             <Link href='/'>

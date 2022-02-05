@@ -7,25 +7,18 @@ export default function Home() {
   return (
     <>
       <StyledContainer>
-        <h1 className='bold'>Howdy Y'all</h1>
         <PhotoContainer>
           <Photo
-            src={`https://images.pexels.com/photos/10293190/pexels-photo-10293190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`}
+            src={`https://images.pexels.com/photos/2781760/pexels-photo-2781760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}
+            styleSize={"large-photo"}
           />
           <Photo
-            src={`https://images.pexels.com/photos/10293190/pexels-photo-10293190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`}
+            src={`https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`}
+            styleSize={"small-photo"}
           />
           <Photo
-            src={`https://images.pexels.com/photos/10293190/pexels-photo-10293190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`}
-          />
-          <Photo
-            src={`https://images.pexels.com/photos/10293190/pexels-photo-10293190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`}
-          />
-          <Photo
-            src={`https://images.pexels.com/photos/10293190/pexels-photo-10293190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`}
-          />
-          <Photo
-            src={`https://images.pexels.com/photos/10293190/pexels-photo-10293190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`}
+            src={`https://images.pexels.com/photos/3889935/pexels-photo-3889935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}
+            styleSize={"small-photo"}
           />
         </PhotoContainer>
       </StyledContainer>
