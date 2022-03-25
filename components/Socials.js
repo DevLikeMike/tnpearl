@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import Link from "next/link";
 
 const SocialContainer = styled.div`
   position: fixed;
@@ -27,8 +28,12 @@ const SocialContainer = styled.div`
 export default function Socials() {
   return (
     <SocialContainer>
-      <FaInstagram size='1.5rem' />
-      <FaFacebook size='1.5rem' />
+      <Link href={"https://instagram.com/devlikemike"}>
+        <FaInstagram size='1.5rem' />
+      </Link>
+      <Link href={"https://facebook.com/devlikemike"}>
+        <FaFacebook size='1.5rem' />
+      </Link>
     </SocialContainer>
   );
 }

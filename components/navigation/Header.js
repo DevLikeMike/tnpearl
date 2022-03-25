@@ -49,7 +49,7 @@ const NavItem = styled.li`
   color: ${(props) => props.theme.darkGray};
 
   &:hover {
-    background-color: ${(props) => props.theme.primaryDark};
+    background-color: ${(props) => props.theme.primary};
     color: #fff;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;

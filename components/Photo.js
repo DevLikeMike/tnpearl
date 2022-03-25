@@ -4,6 +4,8 @@ const Container = styled.div`
   border: 1px solid #111;
   border-radius: 5px;
   overflow: hidden;
+  height: auto;
+  max-height: 60rem;
 
   &:hover img {
     transform: scale(1.2);
@@ -14,6 +16,7 @@ const Container = styled.div`
 const StyledImage = styled.img`
   object-fit: cover;
   transition: transform 0.5s ease;
+  width: 100%;
   max-width: 100%;
   height: 100%;
 `;

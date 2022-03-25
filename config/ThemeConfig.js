@@ -8,7 +8,7 @@ export const theme = {
   darkGray: "#333333",
   white: "#ffffff",
   offWhite: "#f0f0f0",
-  primary: "#fa6686",
+  primary: "#555555",
   primaryDark: "#fa3963",
   standardPadding: "3rem",
   mobilePadding: "1rem",
